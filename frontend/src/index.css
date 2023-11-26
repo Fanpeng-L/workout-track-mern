@@ -70,9 +70,9 @@ header a {
   top: 20px;
   right: 20px;
   cursor: pointer;
-  background: #f1f1f1;
+  background: #d8d8d8;
   padding: 6px;
-  border-radius: 50%;
+  border-radius: 10px;
   color: #333;
 }
 
@@ -81,6 +81,7 @@ label,
 input {
   display: block;
 }
+
 input {
   padding: 10px;
   margin-top: 10px;
@@ -90,6 +91,7 @@ input {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
 form button {
   background: var(--primary);
   border: 0;
@@ -99,7 +101,8 @@ form button {
   border-radius: 4px;
   cursor: pointer;
 }
-div.error {
+
+.error {
   padding: 10px;
   background: #ffefef;
   border: 1px solid var(--error);
