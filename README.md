@@ -8,7 +8,7 @@ You can:
 - see all the workouts on home page
 - delete a workout
 
-[Try here 🔗]()
+[Try here 🔗](https://main--workout-track-mern-project.netlify.app/)
 
 Preview for the website:
 
