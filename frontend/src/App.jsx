@@ -3,6 +3,8 @@ import React from "react";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 
+export const URL = import.meta.env.SERVER_URL;
+
 function App() {
   return (
     <div className="App">

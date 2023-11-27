@@ -3,6 +3,7 @@ import { useWorkoutsContext } from "../hooks/useWorkoutsContext";
 
 import WorkoutDetails from "../components/WorkoutDetails";
 import WorkoutForm from "../components/WorkoutForm";
+import { URL } from "../App";
 
 const Home = () => {
   const { workouts, dispatch } = useWorkoutsContext();
@@ -10,7 +11,7 @@ const Home = () => {
   //fetch workout api from backend
   useEffect(() => {
     const fetchWorkout = async () => {
-      const response = await fetch("http://localhost:4000/api/workouts");
+      const response = await fetch(`${URL}/api/workouts`);
       const json = await response.json();
 
       if (response.ok) {
