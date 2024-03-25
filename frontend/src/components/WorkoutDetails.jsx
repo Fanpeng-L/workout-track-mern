@@ -1,14 +1,14 @@
 import React from "react";
 import { useWorkoutsContext } from "../hooks/useWorkoutsContext";
 import formatDistanceToNow from "date-fns/formatDistanceToNow";
+import { URL } from "../App";
 
 const WorkoutDetails = ({ workout }) => {
   const { dispatch } = useWorkoutsContext();
   const handleClick = async () => {
-    const response = await fetch(
-      `http://localhost:4000/api/workouts/${workout._id}`,
-      { method: "DELETE" }
-    );
+    const response = await fetch(`${URL}/api/workouts/${workout._id}`, {
+      method: "DELETE",
+    });
     const json = await response.json();
 
     if (response.ok) {
